@@ -18,18 +18,18 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     
     // Variant classes
     const variants = {
-      default: "bg-surface text-foreground shadow hover:bg-surface-hover border border-border",
+      default: "bg-surface text-foreground shadow-sm hover:bg-surface-hover border border-border",
       outline: "border border-border bg-transparent hover:bg-surface-hover text-foreground",
       ghost: "hover:bg-surface-hover text-foreground",
-      shine: "bg-brand text-white shadow-lg shadow-brand/20 hover:bg-brand/90 hover:shadow-brand/40 transition-all duration-300 relative overflow-hidden group border border-brand-glow"
+      shine: "bg-gradient-to-b from-brand to-[#4A42B3] text-white shadow-[0_0_20px_-5px_rgba(108,99,255,0.5)] hover:shadow-[0_0_30px_-5px_rgba(108,99,255,0.7)] hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden group border-t border-white/20 border-x border-x-white/10 border-b border-b-black/50"
     }
     
     // Size classes
     const sizes = {
-      default: "h-9 px-4 py-2",
+      default: "h-9 rounded-lg px-4 py-2",
       sm: "h-8 rounded-md px-3 text-xs",
-      lg: "h-10 rounded-md px-8 text-base",
-      icon: "h-9 w-9",
+      lg: "h-11 rounded-xl px-8 text-base",
+      icon: "h-9 w-9 rounded-lg",
     }
 
     return (

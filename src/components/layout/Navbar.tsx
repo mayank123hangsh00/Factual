@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import { Button } from "../ui/Button";
 
+import { Hexagon } from "lucide-react";
+
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
@@ -24,11 +26,12 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand to-accent flex items-center justify-center font-bold text-white shadow-lg shadow-brand/20">
-            H
+        <div className="flex items-center gap-2.5">
+          <div className="relative flex items-center justify-center w-8 h-8">
+            <div className="absolute inset-0 bg-brand/30 blur-[8px] rounded-full" />
+            <Hexagon className="w-8 h-8 text-brand relative z-10 drop-shadow-[0_0_10px_rgba(108,99,255,0.8)]" fill="currentColor" fillOpacity={0.2} strokeWidth={1.5} />
           </div>
-          <span className="font-bold text-xl tracking-tight">Helix</span>
+          <span className="font-bold text-xl tracking-tight text-white drop-shadow-sm">Helix</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/80">

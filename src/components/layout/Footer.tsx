@@ -1,13 +1,13 @@
+import { Hexagon } from "lucide-react";
+
 export const Footer = () => {
   return (
     <footer className="bg-surface py-12 md:py-16 border-t border-border mt-20">
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-6 h-6 rounded bg-gradient-to-tr from-brand to-accent flex items-center justify-center font-bold text-white text-xs">
-              H
-            </div>
-            <span className="font-bold text-lg tracking-tight">Helix</span>
+            <Hexagon className="w-6 h-6 text-brand" fill="currentColor" fillOpacity={0.2} strokeWidth={1.5} />
+            <span className="font-bold text-lg tracking-tight text-white">Helix</span>
           </div>
           <p className="text-sm text-foreground/60 mb-6">
             AI-powered code review platform that helps engineering teams ship better code, faster.
