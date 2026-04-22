@@ -1,7 +1,6 @@
 # Helix — AI-Powered Code Review Platform
 
-> **Take-Home Assignment** — Factual Holding Co.  
-> High-converting landing page built with Next.js, TypeScript & Tailwind CSS.
+> High-converting SaaS landing page built with Next.js, TypeScript, and Tailwind CSS.
 
 **Live Demo:** [helix-landing.vercel.app](https://helix-landing.vercel.app) _(deploy link goes here)_
 
