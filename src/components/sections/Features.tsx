@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import { GlowCard } from "../ui/GlowCard";
 import { Bot, Zap, Shield, GitPullRequest, Code2, LineChart } from "lucide-react";
 

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { GlowCard } from "../ui/GlowCard";
 
 export const Testimonials = () => {
@@ -39,7 +38,7 @@ export const Testimonials = () => {
                 <div className="flex text-brand mb-4">
                   {"★★★★★"}
                 </div>
-                <p className="text-foreground/80 leading-relaxed">"{t.quote}"</p>
+                <p className="text-foreground/80 leading-relaxed">&quot;{t.quote}&quot;</p>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-surface-hover border border-border flex items-center justify-center font-bold text-xs">

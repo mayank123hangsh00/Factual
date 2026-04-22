@@ -80,8 +80,8 @@ export const Hero = () => {
             {/* Fake IDE Content */}
             <div className="flex-1 p-6 relative font-mono text-sm leading-relaxed overflow-hidden text-left">
               <div className="text-brand">function</div> <div className="inline">processPayment(amount: number, user: User) {"{"} </div>
-              <div className="pl-6 text-foreground/50">// TODO: Add validation</div>
-              <div className="pl-6">if (amount {"<="} 0) throw new Error("Invalid amount");</div>
+              <div className="pl-6 text-foreground/50">{`// TODO: Add validation`}</div>
+              <div className="pl-6">if (amount {"<="} 0) throw new Error(&quot;Invalid amount&quot;);</div>
               <br />
               <div className="pl-6 text-accent animate-pulse">const tx = await db.transaction.create({"{"}</div>
               <div className="pl-12 text-accent">amount,</div>
